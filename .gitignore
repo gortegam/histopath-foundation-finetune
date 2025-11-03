@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.pt
+*.pth
+*.zip
+*.tar.gz
+*.h5
+*.pkl
+*.ckpt
+datasets/
+data/
+checkpoints/
+runs/
+.DS_Store
+*.log
+
