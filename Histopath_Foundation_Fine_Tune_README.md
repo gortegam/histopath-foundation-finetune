@@ -134,4 +134,4 @@ LinkedIn: https://www.linkedin.com/in/giancarlo-ortega-8b051a2a6
 
 ---
 
-> This project supports PathAI’s mission to improve diagnostic accuracy and impact patient outcomes through machine learning in clinical pathology.
+> This project supports the mission to improve diagnostic accuracy and impact patient outcomes through machine learning in clinical pathology.
