@@ -1,5 +1,11 @@
+# Virtual environment
 .venv/
+
+# Python cache
 __pycache__/
+*.pyc
+
+# Model weights and large artifacts
 *.pt
 *.pth
 *.zip
@@ -7,10 +13,20 @@ __pycache__/
 *.h5
 *.pkl
 *.ckpt
+
+# Data directories (not tracked in repo)
 datasets/
 data/
+
+# Training checkpoints (users should generate these locally)
 checkpoints/
-runs/
+
+# Ignore everything in runs except final results we intentionally keep
+runs/*
+!runs/metrics.json
+!runs/confusion_matrix.png
+
+# OS / Editor files
 .DS_Store
 *.log
 
