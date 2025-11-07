@@ -2,6 +2,10 @@
 
 Fine-tuning pretrained vision models for colorectal histopathology with reproducible training, evaluation, and interactive slide-level inference.
 
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.x-red)
+![License: MIT](https://img.shields.io/badge/License-MIT-green)
+
 ---
 
 ## 🔬 Overview
