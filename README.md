@@ -136,7 +136,7 @@ MIT — Free to modify and use with attribution.
 
 ## 👤 Author
 **Giancarlo Ortega**  
-Histotechnician → Machine Learning Engineer (Biomedical AI)  
+Histotechnician → Machine Learning Engineer/Data Scientist (Biomedical AI)  
 GitHub: https://github.com/gortegam  
 LinkedIn: https://www.linkedin.com/in/giancarlo-ortega-8b051a2a6
 
