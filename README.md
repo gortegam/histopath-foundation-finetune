@@ -85,7 +85,57 @@ This ROC AUC of **0.9956** indicates **near-perfect class separability**, consis
 Confusion Matrix example:  
 *(included in repo as `runs/confusion_matrix.png`)*
 
+## 🔥 Grad-CAM Visualization
+
+This repository supports **Grad-CAM heatmaps** to visualize which regions of a histopathology patch most influenced the model’s decision.  
+When you run the Streamlit app with a **ResNet-based checkpoint**, enable the sidebar checkbox **“Show Grad-CAM heatmap.”**  
+
+The overlay will render as a red transparency over the uploaded or test image, where deeper reds indicate higher model attention.
+
+<div align="center">
+  <img src="hpft_screenshot_streamlit.png" width="480" alt="Grad-CAM overlay demo">
+  <br>
+  <em>Example: Grad-CAM heatmap highlighting tumor regions (red = stronger model focus)</em>
+</div>
+
+If your checkpoint uses a **Vision Transformer (ViT)** backbone, the app will automatically skip the Grad-CAM step and display a notice.  
+(ViT attention-rollout visualization will be added in a future update.)
+
 ---
+
+### 🧪 Microscope Capture Protocol (for physical slides)
+
+If your slides are **physical** rather than digital, you can still generate inference patches for this model using a microscope camera or smartphone adapter.  
+Follow this brief checklist for reproducible, de-identified image capture:
+
+1. **Hardware Setup**
+   - Use a **20× objective** (or nearest available) with brightfield illumination.  
+   - For phones, use a **microscope eyepiece adapter** ($20–$60 on Amazon).  
+   - For consistent framing, fix the eyepiece or phone holder in place between captures.
+
+2. **Lighting & Focus**
+   - White-balance the microscope on a blank area of the slide before imaging tissue.  
+   - Maintain consistent lighting across slides (avoid auto-exposure).  
+   - Focus sharply on nuclei or epithelial boundaries before capture.
+
+3. **De-identification**
+   - Do **not** photograph labels, barcodes, or any patient identifiers.  
+   - Crop or mask label areas before uploading or analysis.
+
+4. **Image Preparation**
+   - Save images as `.png` or `.jpg`.  
+   - Use the provided script [`tools/crop_tiles_from_photos.py`](tools/crop_tiles_from_photos.py) to generate **224×224** patches for model input:
+     ```bash
+     python tools/crop_tiles_from_photos.py --src captures --dst camera_tiles --tile 224 --stride 224
+     ```
+   - Upload cropped tiles to the app or run inference directly in `src/evaluate.py`.
+
+---
+
+💡 *Tip:* Including a few Grad-CAM overlays from your microscope images in your portfolio README helps visually demonstrate model interpretability and applied use in real-world histopathology.
+
+---
+
 
 ## 🖥️ Streamlit Interactive Inference App
 
