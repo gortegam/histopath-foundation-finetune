@@ -4,8 +4,11 @@ Fine-tuning pretrained vision models for colorectal histopathology with reproduc
 > Achieved **ROC AUC = 0.9956** on colorectal tumor vs normal classification using a fine-tuned ResNet18 — includes reproducible training pipeline and interactive Streamlit inference app.
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
-![PyTorch](https://img.shields.io/badge/PyTorch-2.x-red)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green)
+![PyTorch](https://img.shields.io/badge/DeepLearning-PyTorch-red)
+![Vision](https://img.shields.io/badge/Model-ResNet18-green)
+![ML](https://img.shields.io/badge/Task-Histopathology-purple)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
 ---
 
