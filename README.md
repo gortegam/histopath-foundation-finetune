@@ -25,6 +25,43 @@ This repo demonstrates:
 - Modular code structure suitable for extension or deployment
 
 ---
+# 🧠 TL;DR (For Recruiters)
+
+> **A full medical imaging ML pipeline:** Fine‑tuned a CNN on colorectal H&E patches, achieved ROC AUC **0.9956**, built Grad‑CAM interpretability, and deployed an interactive Streamlit inference app.
+
+This project shows:
+
+- Applied ML on medical images  
+- Deep learning proficiency (PyTorch)  
+- Ability to build clinician‑interpretable tools  
+- Domain knowledge as a histotechnician  
+
+---
+
+# 🧩 Skills Demonstrated
+
+### **Deep Learning & Vision**
+- Transfer learning (ResNet18)
+- Custom PyTorch training loops  
+- Dataloaders, augmentations, and batching  
+- ROC AUC, confusion matrix, probability calibration  
+
+### **Model Interpretability**
+- Grad‑CAM heatmaps  
+- Attention visualization  
+- Tumor vs normal morphological reasoning  
+
+### **Deployment & Tooling**
+- Streamlit app for real‑time inference  
+- Automated Grad‑CAM overlay during prediction  
+- Clean project structure + reproducibility  
+
+### **Healthcare/Pathology Domain**
+- Understanding of H&E morphology  
+- Binary tumor vs normal detection  
+- Digital pathology workflow alignment  
+
+---
 
 ## 🧫 Dataset
 
