@@ -81,6 +81,12 @@ data/train/<class>/
 data/val/<class>/
 data/test/<class>/
 ```
+To download the dataset:
+
+```bash
+wget https://zenodo.org/record/1214456/files/CRC-VAL-HE-7K.zip
+unzip CRC-VAL-HE-7K.zip
+```
 
 ---
 
