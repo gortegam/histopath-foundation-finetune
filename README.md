@@ -15,15 +15,17 @@ Fine-tuning pretrained vision models for colorectal histopathology with reproduc
 ## 🔬 Overview
 
 This project fine-tunes vision models (ResNet18 and optionally ViT) to classify colorectal histopathology patches as **Tumor (TUM)** or **Normal (NORM)**.  
-It is designed to mirror real-world digital pathology workflows: dataset organization → model training → evaluation → visual interactive inference.
+It is designed to mirror real-world digital pathology workflows: dataset organization → model training → evaluation → visual interactive inference. 
+It demonstrates an end‑to‑end medical imaging ML workflow:
 
-This repo demonstrates:
+- Dataset preprocessing  
+- Transfer learning with PyTorch  
+- Custom training loops  
+- Model evaluation (ROC AUC 0.9956)  
+- Grad‑CAM interpretability  
+- Streamlit inference app  
 
-- End-to-end deep learning training pipeline using PyTorch
-- Evaluation with ROC AUC and confusion matrix outputs
-- Streamlit-based inference UI for clinicians and researchers
-- Modular code structure suitable for extension or deployment
-
+This is the type of workflow used in real-world digital pathology AI pipelines (e.g., for frozen sections, tumor detection, second‑reader systems).
 ---
 # 🧠 TL;DR (For Recruiters)
 
