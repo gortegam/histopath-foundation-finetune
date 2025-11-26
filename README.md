@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="images/banner.png" width="100%" alt="Histopath Foundation Fine-Tune Banner">
+</p>
+
 # Histopath Foundation Fine-Tune
 
 Fine-tuning pretrained vision models for colorectal histopathology with reproducible training, evaluation, and interactive slide-level inference.

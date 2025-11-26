@@ -30,3 +30,18 @@ runs/*
 .DS_Store
 *.log
 
+# Local data and models
+data/
+datasets/
+checkpoints/
+runs/
+notebooks/
+
+# Streamlit and cache
+.streamlit/
+__pycache__/
+*.pt
+*.pth
+
+# CoCalc / temp files
+terminal.term
